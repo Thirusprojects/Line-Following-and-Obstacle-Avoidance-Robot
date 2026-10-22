@@ -4,6 +4,10 @@ An Arduino Uno mobile robot combining **IR-based line sensing** with **ultrasoni
 
 ![Line-following robot](media/images/img-20230908-123536-626.jpg)
 
+## My contribution — Semester 5
+
+I worked on coding and the electrical connections for line following and obstacle avoidance. Both functions worked separately and together.
+
 ## How it works
 
 The IR sensors provide information about the track beneath the robot, allowing the controller to adjust wheel movement to follow the line. The ultrasonic sensors provide distance measurements for detecting nearby obstacles. The Arduino Uno processes these inputs and commands the motors through the Adafruit driver.
