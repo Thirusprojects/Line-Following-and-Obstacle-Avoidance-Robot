@@ -1,44 +1,32 @@
 # Line-Following and Obstacle-Avoidance Robot
 
-A mobile-robot project intended to combine line following with obstacle avoidance. Two photographs and a short video document the robot and a floor-track demonstration setup.
+An Arduino Uno mobile robot combining **IR-based line sensing** with **ultrasonic obstacle detection**. The project used **three HC-SR04 ultrasonic sensors**, IR sensors and an Adafruit motor driver. Both line following and obstacle avoidance worked on the physical robot.
 
-**Portfolio:** Thiruppathi P · [Thirusprojects](https://github.com/Thirusprojects)
+![Line-following robot](media/images/img-20230908-123536-626.jpg)
 
-![Line-Following and Obstacle-Avoidance Robot — supplied project image](media/images/img-20230908-123536-626.jpg)
+## How it works
 
-## Project status
+The IR sensors provide information about the track beneath the robot, allowing the controller to adjust wheel movement to follow the line. The ultrasonic sensors provide distance measurements for detecting nearby obstacles. The Arduino Uno processes these inputs and commands the motors through the Adafruit driver.
 
-Physical robot and demonstration clip available. Obstacle-avoidance behavior and repeatable tracking performance need confirmation.
+## Hardware
 
-## Contribution
+| Component | Details |
+| --- | --- |
+| Controller | Arduino Uno |
+| Distance sensors | Three HC-SR04 ultrasonic sensors |
+| Track sensors | IR sensors |
+| Motor control | Adafruit motor driver; revision not specified |
 
-Personal responsibilities and team contribution are awaiting confirmation.
+## Demonstrated functions
 
-## Design and documented features
+- Line following worked on the robot.
+- Obstacle avoidance worked on the robot.
+- Both functions were reported to work separately and together.
 
-- Mobile chassis with front-mounted ultrasonic transducers.
-- Photographs showing the assembled robot.
-- Video showing the robot on a dark floor track.
+The exact mode-switching logic is not documented. No editable original program was included in the project files.
 
-## Videos
+## Demonstration
 
-- [View IMG_9979](media/videos/img-9979.mp4)
+[Watch the floor-track demonstration](media/videos/img-9979.mp4)
 
-## Image gallery
-
-- [Project image 1](media/images/img-20230908-123536-626.jpg)
-- [Project image 2](media/images/img-20230908-123537-099.jpg)
-
-## Evidence and limitations
-
-Exact controller, line sensors, motor driver and control algorithm are not supplied. The recording is retained as project evidence, without quantified tracking accuracy or obstacle-avoidance claims.
-
-## Details to complete
-
-Confirm your contribution, controller, line sensors and motor driver, and whether both line following and obstacle avoidance worked.
-
-## File provenance
-
-See [asset inventory](docs/ASSETS.md) for the mapping to supplied filenames. JPEG and MP4 exports are provided for browser access. Original presentation, PDF and CAD contents are retained where supplied.
-
-This repository documents project materials supplied by the portfolio owner. Team work and third-party design contributions should be credited as their roles are confirmed.
+![Additional robot view](media/images/img-20230908-123537-099.jpg)
